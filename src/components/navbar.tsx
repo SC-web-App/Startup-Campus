@@ -41,7 +41,7 @@ export const Navbar = () => {
                 {item.text}
               </a>
             ))}
-            <button className="bg-[#103045] text-white px-4 py-2 rounded-md hover:bg-[#0d2635] transition-all ease-in-out duration-200">
+            <button className="bg-[#103045] text-white px-4 py-2 rounded-full hover:bg-[#0d2635] transition-all ease-in-out duration-200">
               Log out
             </button>
           </div>
