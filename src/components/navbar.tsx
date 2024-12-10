@@ -5,63 +5,43 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-gray-200 w-full">
+    <nav className="bg-gray-50 border-b border-gray-200 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a
               href="/"
-              className="flex items-center transition-all duration-300 ease-in-out transform hover:scale-105 p-2 rounded-sm"
+              className="flex items-center group transition-all ease-in-out duration-300"
             >
-              <div className="bg-blue-900 text-white font-bold text-xl px-2 py-1 rounded-sm transition-all duration-300 ease-in-out hover:scale-105">
-                SC
-              </div>
-              <span className="ml-2 font-semibold text-gray-800 text-lg transition-all duration-300 ease-in-out transform hover:text-blue-900">
-                STARTUP CAMPUS
-              </span>
+              
+              <img
+                src="/Logo.svg"
+                alt="SC Startup Campus Logo"
+                className="h-14 w-auto group-hover:scale-110 group-hover:shadow-lg transition-all ease-in-out duration-300"
+              />
             </a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <a
-              href="#about"
-              className="text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              About us
-            </a>
-            <a
-              href="#events"
-              className="text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Upcoming Events
-            </a>
-            <a
-              href="#gallery"
-              className="text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Gallery
-            </a>
-            <a
-              href="#startups"
-              className="text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Startups
-            </a>
-            <a
-              href="#team"
-              className="text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Team Members
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Contact
-            </a>
-            <button className="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition duration-300 ease-in-out transform hover:scale-105">
+            {[
+              { href: "#about", text: "About us" },
+              { href: "#events", text: "Upcoming Events" },
+              { href: "#gallery", text: "Gallery" },
+              { href: "#startups", text: "Startups" },
+              { href: "#team", text: "Team Members" },
+              { href: "#contact", text: "Contact" },
+            ].map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                className="text-gray-800 hover:text-[#103045] transition-all ease-in-out duration-200"
+              >
+                {item.text}
+              </a>
+            ))}
+            <button className="bg-[#103045] text-white px-4 py-2 rounded-md hover:bg-[#0d2635] transition-all ease-in-out duration-200">
               Log out
             </button>
           </div>
@@ -70,7 +50,7 @@ export const Navbar = () => {
           <div className="flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-[#103045] focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -104,48 +84,28 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden`}
+        className={`${
+          isOpen ? "block" : "hidden"
+        } md:hidden transition-all ease-in-out duration-300`}
       >
         <div className="space-y-1 px-2 pb-3">
-          <a
-            href="#about"
-            className=" px-3 block text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            About us
-          </a>
-          <a
-            href="#events"
-            className="px-3 block text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            Upcoming Events
-          </a>
-          <a
-            href="#gallery"
-            className="px-3  block text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            Gallery
-          </a>
-          <a
-            href="#startups"
-            className="px-3  block text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            Startups
-          </a>
-          <a
-            href="#team"
-            className="px-3  block text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            Team Members
-          </a>
-          <a
-            href="#contact"
-            className="px-3  block text-gray-600 hover:text-blue-900 transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            Contact
-          </a>
-          <button className="w-full bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition duration-300 ease-in-out transform ">
+          {[
+            { href: "#about", text: "About us" },
+            { href: "#events", text: "Upcoming Events" },
+            { href: "#gallery", text: "Gallery" },
+            { href: "#startups", text: "Startups" },
+            { href: "#team", text: "Team Members" },
+            { href: "#contact", text: "Contact" },
+          ].map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className="block text-gray-800 hover:text-[#103045] transition-all ease-in-out duration-200"
+            >
+              {item.text}
+            </a>
+          ))}
+          <button className="w-full bg-[#103045] text-white px-4 py-2 rounded-md hover:bg-[#0d2635] transition-all ease-in-out duration-200">
             Log out
           </button>
         </div>
