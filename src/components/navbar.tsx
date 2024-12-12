@@ -29,7 +29,7 @@ export const Navbar = () => {
               { href: "#about", text: "About us" },
               { href: "#events", text: "Upcoming Events" },
               { href: "#gallery", text: "Gallery" },
-              { href: "#startups", text: "Startups" },
+              { href: "#founders", text: "Founders" },
               { href: "#team", text: "Team Members" },
               { href: "#contact", text: "Contact" },
             ].map((item, index) => (
@@ -93,7 +93,7 @@ export const Navbar = () => {
             { href: "#about", text: "About us" },
             { href: "#events", text: "Upcoming Events" },
             { href: "#gallery", text: "Gallery" },
-            { href: "#startups", text: "Startups" },
+            { href: "#founders", text: "Founders" },
             { href: "#team", text: "Team Members" },
             { href: "#contact", text: "Contact" },
           ].map((item, index) => (
