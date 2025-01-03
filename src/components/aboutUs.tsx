@@ -17,7 +17,7 @@ export const AboutUs = () => {
                 <div>
                     <Image
                             className="rounded-full"
-                            src="public/About-img/AboutPic.svg"
+                            src="/About-img/AboutPic.svg"
                             alt="2023 Orientation Info Session"
                             width={538}
                             height={361}
