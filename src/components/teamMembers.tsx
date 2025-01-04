@@ -1,5 +1,7 @@
 export const TeamMembers = () => {
     return(
-        <div>Team members</div>
+            <div>
+                Team members
+            </div>
     )
 }
