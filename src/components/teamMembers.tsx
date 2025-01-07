@@ -4,7 +4,7 @@ import TeamMemberCard from "./teamMemberCard";
 const teamMembers = [
   {
     name: "Idris Shaaba",
-    roleAbbreviation: "CE0",
+    roleAbbreviation: "CEO",
     role: "Chief Executive Officer",
     imageUrl: "",
   },
