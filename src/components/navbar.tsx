@@ -1,8 +1,29 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Navbar = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // State for login/logout
   const [isOpen, setIsOpen] = useState(false);
+
+  // Check if the user is logged in from localStorage when the component mounts
+  useEffect(() => {
+    const loggedIn = localStorage.getItem("isLoggedIn") === "true";
+    setIsLoggedIn(loggedIn);
+  }, []);
+
+  const handleAuthAction = () => {
+    if (isLoggedIn) {
+      // If logged in, log out and redirect to GlobalStartupCampus
+      localStorage.setItem("isLoggedIn", "false");
+      setIsLoggedIn(false);
+      window.location.href = "/GlobalStartUpCampus"; // Redirect to GlobalStartUpCampus page
+    } else {
+      // If logged out, log in and redirect to Homepage
+      localStorage.setItem("isLoggedIn", "true");
+      setIsLoggedIn(true);
+      window.location.href = "/Homepage"; // Redirect to Homepage
+    }
+  };
 
   return (
     <nav className="bg-gray-50 border-b border-gray-200 w-full">
@@ -14,7 +35,6 @@ export const Navbar = () => {
               href="/"
               className="flex items-center group transition-all ease-in-out duration-300"
             >
-              
               <img
                 src="/Logo.svg"
                 alt="SC Startup Campus Logo"
@@ -41,8 +61,11 @@ export const Navbar = () => {
                 {item.text}
               </a>
             ))}
-            <button className="bg-[#103045] text-white px-4 py-2 rounded-full hover:bg-[#0d2635] transition-all ease-in-out duration-200">
-              Log out
+            <button
+              onClick={handleAuthAction}
+              className="bg-[#103045] text-white px-4 py-2 rounded-full hover:bg-[#0d2635] transition-all ease-in-out duration-200"
+            >
+              {isLoggedIn ? "Log Out" : "Log In"}
             </button>
           </div>
 
@@ -105,8 +128,11 @@ export const Navbar = () => {
               {item.text}
             </a>
           ))}
-          <button className="w-full bg-[#103045] text-white px-4 py-2 rounded-md hover:bg-[#0d2635] transition-all ease-in-out duration-200">
-            Log out
+          <button
+            onClick={handleAuthAction}
+            className="w-full bg-[#103045] text-white px-4 py-2 rounded-md hover:bg-[#0d2635] transition-all ease-in-out duration-200"
+          >
+            {isLoggedIn ? "Log Out" : "Log In"}
           </button>
         </div>
       </div>
