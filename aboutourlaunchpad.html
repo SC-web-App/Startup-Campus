@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launchpad Component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
+    .launchpad-container {
+      padding: 2rem;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 70px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="launchpad-container">
+    <h2 class="subtitle">What Are Launchpads?</h2>
+    <p class="title">About Our Launchpads</p>
+    <div class="cards-container">
+      <div class="card">
+        <div class="icon">
+          <img src="mdi_donate-outline.png" alt="">
+        </div>
+        <h3 class="card-title">Building Connections</h3>
+        <p class="card-description">
+          It provides a platform where entrepreneurs can network, collaborate, and form meaningful relationships to
+          drive growth and success.
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="mdi_donate-outline-2.png" alt="">
+        </div>
+        <h3 class="card-title">Enhancing Skills</h3>
+        <p class="card-description">
+          We provide resources and mentorship to help aspiring entrepreneurs develop the skills needed to succeed in the
+          startup world.
+        </p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="mdi_donate-outline-3.png" alt="">
+        </div>
+        <h3 class="card-title">Unlocking Opportunities</h3>
+        <p class="card-description">
+          We help you access a range of opportunities, from funding to partnerships, that can accelerate your startup
+          journey and foster growth.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
