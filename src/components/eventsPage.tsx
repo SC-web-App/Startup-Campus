@@ -2,7 +2,13 @@ import ./events.css;
 
 export const Events = () => {
     return(
-<div>
+<body>
+
+<header>
+  <a href="javascript:history.back()" style="text-decoration: none; color: #007bff;">←</a>
+</header>
+
+<main>
   <div className="header-row">
     <h1>Startup 4.0 Competition</h1>
     <div className="time-date">
@@ -59,7 +65,7 @@ export const Events = () => {
   </div>
   <p>Copyright Nile Startup Campus 2024</p>
 </footer>
-</div>
 
+</body>
     )
 }
