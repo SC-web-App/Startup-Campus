@@ -1,0 +1,162 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    padding: 1em;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  main {
+    padding: 5% 10%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  
+  .description {
+    margin: 0 auto;
+  }
+  
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10%; 
+  }
+  
+  .form-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form {
+    margin: 0 auto; 
+    padding: 0; 
+  }
+  
+  form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 0.95em;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .submit{
+    background-color: #002b5c;
+    color: white;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border:0;
+    outline:none;
+    letter-spacing:.1em;
+    text-align: center;
+    width: 100%;
+  }
+  .submit-button{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .submit-button:hover {
+    background-color: #004080;
+  }
+  
+  /* Footer Styles */
+  footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center; 
+    gap: 2em; 
+    font-size: 1em; 
+    color: #2c3e50;
+    margin: 1em 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: inherit; 
+    font-weight: 400; 
+    transition: color 0.2s;
+  }
+  
+  .footer-links a:hover {
+    color: #0077b6; 
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1em;
+  }
+  
+  .header-row h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .time-date {
+    display: flex;
+    gap: 2em; 
+  }
+  
+  .time-block, .date-block {
+    text-align: center; }
+  
+  .time-block span, .date-block span {
+    display: block; 
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .time-block strong, .date-block strong {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  
+  
