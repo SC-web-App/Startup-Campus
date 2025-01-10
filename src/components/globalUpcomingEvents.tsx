@@ -8,11 +8,10 @@ export const GlobalUpcomingEvents = () => {
         
 
         <div className="grid grid-cols-3 items-center gap-10">
-        <div className="relative">
-                    <div className="container relative mr-3 mt-10 ml-9 mb-16 w-500 h-300"> 
-                        
-                        <img src="/About-img/AboutPic.svg" alt="2023 Orientation Info Session" className="rounded-lg"/>
-                        <div className="absolute -bottom-11 sm:left-">
+        <div className="">
+                    <div className="mr-3 mt-10 ml-9 mb-16 w-500 h-300"> 
+                        <div><img src="/UpcomingEvents-img/event1.svg" alt="2023 Orientation Info Session" className="rounded-lg"/></div>
+                        <div className="-bottom-11 sm:left-">
                             <div className="bg-white rounded-lg p-5">
                                 <p className="text-black text-md font-normal text-center">Startup 4.0 Competition<br></br>Collaborate to develop sustainable solutions  addressing the UN's SDG<br></br></p>
                                 <button className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 block mt-2">Register</button>
@@ -22,10 +21,10 @@ export const GlobalUpcomingEvents = () => {
                 </div>
   
 
-                <div className="relative">
-                    <div className="container relative mr-3 mt-10 ml-9 mb-16 w-500 h-300"> 
-                        <img src="/About-img/AboutPic.svg" alt="2023 Orientation Info Session" className="rounded-lg"/>
-                        <div className="absolute -bottom-11 sm:left-">
+                <div className="">
+                    <div className="mr-3 mt-10 ml-9 mb-16 w-500 h-300">
+                        <div><img src="/UpcomingEvents-img/event1.svg" alt="2023 Orientation Info Session" className="rounded-lg"/></div>
+                        <div className=" -bottom-11 sm:left-">
                             <div className="bg-white rounded-lg p-5">
                                 <p className="text-black text-md font-normal text-center">Startup 4.0 Competition<br></br>Collaborate to develop sustainable solutions addressing the UN's SDG<br></br></p>
                                 <button className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 block mt-2">Register</button>
@@ -34,10 +33,11 @@ export const GlobalUpcomingEvents = () => {
                     </div>
                 </div>
 
-                <div className="relative">
-                    <div className="container relative mr-3 mt-10 ml-9 mb-16 w-500 h-300"> 
-                        <img src="/About-img/AboutPic.svg" alt="2023 Orientation Info Session" className="rounded-lg"/>
-                        <div className="absolute -bottom-11 sm:left-">
+                <div className="">
+                    <div className="mr-3 mt-10 ml-9 mb-16 w-500 h-300">
+                        <div><img src="/UpcomingEvents-img/event1.svg" alt="2023 Orientation Info Session" className="rounded-lg"/></div>
+                        
+                        <div className="-bottom-11 sm:left-">
                             <div className="bg-white rounded-lg p-5">
                                 <p className="text-black text-md font-normal text-center">Startup 4.0 Competition<br></br>Collaborate to develop sustainable solutionsh addressing the UN's SDG<br></br></p>
                                 <button className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 block mt-2">Register</button>
