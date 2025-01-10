@@ -44,7 +44,7 @@ export const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {[
               { href: "#about", text: "About us" },
               { href: "#events", text: "Upcoming Events" },
