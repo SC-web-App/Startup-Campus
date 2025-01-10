@@ -14,15 +14,17 @@ const GlobalStartUpCampus = () => {
   return (
     <div>
       <Navbar />
-      <GlobalJoinALaunchPad />
-      <GlobalAboutUs />
-      <GlobalCoreSections />
-      <GlobalStartUpExposure />
-      <GlobalUpcomingEvents />
-      <GlobalGallery />
-      <GlobalFounders />
-      <GlobalTeamMembers />
-      <GlobalGetInTouch />
+      <div className="">
+        <GlobalJoinALaunchPad />
+        <GlobalAboutUs />
+        <GlobalCoreSections />
+        <GlobalStartUpExposure />
+        <GlobalUpcomingEvents />
+        <GlobalGallery />
+        <GlobalFounders />
+        <GlobalTeamMembers />
+        <GlobalGetInTouch />
+      </div>
       <Footer />
     </div>
   );
