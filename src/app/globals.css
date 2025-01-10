@@ -20,3 +20,8 @@ body {
   font-family: "Spartan";
   font-style: normal;
 }
+
+/* founders section */
+.founders-toggler.active > div {
+  background-color: #001742;
+}
